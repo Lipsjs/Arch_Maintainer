@@ -21,42 +21,61 @@ Run this command in your terminal:
 ```bash
 sh -c "$(curl -L https://raw.githubusercontent.com/Lipsjs/Arch_Maintainer/main/install.sh)"
 ```
+
 This will:
 
-    Download arch-tool to ~/bin/arch-maintainer
-
-    Make it executable
-
-    Ensure it is available globally
+```text
+- Download arch-tool to ~/bin/arch-maintainer
+- Make it executable
+- Ensure it is available globally
+```
 
 After installation, run the updater with:
 
+```bash
 arch-maintainer
+```
 
-Option 2: Manual installation
+---
+
+### Option 2: Manual installation
 
 If you prefer, you can install the script manually:
 
-    Download the script:
+Download the script:
 
+```bash
 wget https://raw.githubusercontent.com/Lipsjs/Arch_Maintainer/main/arch-tool -O arch-maintainer
+```
 
-    Make it executable:
+Make it executable:
 
+```bash
 chmod +x arch-maintainer
+```
 
-    Move it to a folder in your $PATH (optional):
+Move it to a folder in your `$PATH` (optional):
 
+```bash
 mv arch-maintainer ~/bin/
+```
 
-    Run the script:
+Run the script:
 
+```bash
 arch-maintainer
+```
 
-Notes
+---
 
-    Conflicting packages may require manual intervention.
+### Notes
 
-    The script is safe and bare-bones, skipping updates that can’t be applied due to conflicts.
+```text
+- Conflicting packages may require manual intervention.
+- The script is safe and bare-bones, skipping updates that can’t be applied due to conflicts.
+- Designed for Arch Linux and Arch-based distributions.
+```
 
-    Designed for Arch Linux and Arch-based distributions.
+---
+
+
