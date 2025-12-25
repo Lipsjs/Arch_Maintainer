@@ -11,7 +11,7 @@ Arch Maintainer Tool by Lipsjs is a simple Bash script to automate Arch Linux ma
 Run the script directly:
 
 ```bash
-./arch-tool
+./arch-maintainer
 
 ## Notes
 
