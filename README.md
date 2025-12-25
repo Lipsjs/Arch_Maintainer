@@ -20,7 +20,7 @@ Run this command in your terminal:
 
 ```bash
 sh -c "$(curl -L https://raw.githubusercontent.com/Lipsjs/Arch_Maintainer/main/install.sh)"
-
+```
 This will:
 
     Download arch-tool to ~/bin/arch-maintainer
