@@ -75,7 +75,9 @@ arch-maintainer
 - The script is safe and bare-bones, skipping updates that can’t be applied due to conflicts.
 - Designed for Arch Linux and Arch-based distributions.
 ```
+### License
 
+This project is open source and available under the MIT License.
 ---
 
 
