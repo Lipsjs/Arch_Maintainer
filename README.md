@@ -1,20 +1,62 @@
 # Arch Maintainer Tool
 
-Arch Maintainer Tool by Lipsjs is a simple Bash script to automate Arch Linux maintenance:
+**Arch Maintainer Tool by Lipsjs** is a lightweight Bash script for Arch Linux and Arch-based distributions.  
 
-- Updates system packages
-- Cleans cached packages
-- Checks for failed systemd services
+It automates basic system maintenance:
 
-## Usage
+- Updates system packages  
+- Cleans old cached packages  
+- Checks for failed systemd services  
 
-Run the script directly:
+The script is safe and bare-bones. If a package conflict occurs, it will skip the conflicting package and continue updating the rest of the system. Users are warned of any conflicts for manual resolution.
+
+---
+
+## Installation & Usage
+
+### Option 1: One-line installer (recommended)
+
+Run this command in your terminal:
 
 ```bash
-./arch-maintainer
+sh -c "$(curl -L https://raw.githubusercontent.com/Lipsjs/Arch_Maintainer/main/install.sh)"
 
-## Notes
+This will:
 
-- Conflicting packages may require manual intervention.  
-- If a package cannot be updated due to conflicts, the script will skip it and continue updating the rest of the system.  
-- Safe, bare-bones, and designed for Arch-based systems.
+    Download arch-tool to ~/bin/arch-maintainer
+
+    Make it executable
+
+    Ensure it is available globally
+
+After installation, run the updater with:
+
+arch-maintainer
+
+Option 2: Manual installation
+
+If you prefer, you can install the script manually:
+
+    Download the script:
+
+wget https://raw.githubusercontent.com/Lipsjs/Arch_Maintainer/main/arch-tool -O arch-maintainer
+
+    Make it executable:
+
+chmod +x arch-maintainer
+
+    Move it to a folder in your $PATH (optional):
+
+mv arch-maintainer ~/bin/
+
+    Run the script:
+
+arch-maintainer
+
+Notes
+
+    Conflicting packages may require manual intervention.
+
+    The script is safe and bare-bones, skipping updates that can’t be applied due to conflicts.
+
+    Designed for Arch Linux and Arch-based distributions.
